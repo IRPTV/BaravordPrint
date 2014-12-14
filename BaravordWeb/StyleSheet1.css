@@ -1,0 +1,95 @@
+﻿body {
+    -webkit-print-color-adjust:exact;
+    line-height: 1.0;
+
+}
+.TitleHeaderTd
+{
+    font-family:'B Titr';
+    font-size:10pt;
+    background-color:#cccccc;
+    text-align:center;
+    border:solid 1px black;
+    -webkit-print-color-adjust: exact;
+    height:10px;
+    vertical-align:middle;
+    padding-bottom:3px;
+    border-radius:5px;    
+}
+.LblNotify
+{
+     font-family:'B Zar';
+    font-size:11pt;
+    font-weight:bold; 
+    direction:rtl;
+    float:right;
+}
+.LblGridTitleRow
+{
+     font-family:'B Nazanin';
+    font-size:12pt;
+    font-weight:bold; 
+    direction:ltr;
+}
+.LblParametersTitle
+{
+    font-family:'B Titr';
+    font-size:8pt;
+    font-weight:normal; 
+    direction:ltr;
+}
+.LblParameters
+{
+    font-family:'B Nazanin';
+    font-size:13pt;
+    font-weight:normal; 
+    direction:rtl;
+}
+.LblParametersSmall
+{
+    font-family:'B Nazanin';
+    font-size:9pt;
+    font-weight:bold; 
+    direction:rtl;
+}
+.LblParametersdigit
+{
+    font-family:'B Titr';
+    font-size:9pt;
+    font-weight:normal; 
+    direction:ltr;
+}
+.LblValues
+{
+    font-family:'B Nazanin';
+    font-size:11pt;     
+    direction:rtl;
+    font-weight:bold;
+    float:right;
+   
+}
+.TitleTd
+{
+    font-family:'B Titr';
+    font-size:12pt;    
+    text-align:center;
+    border:solid 1px black;
+}
+.LblParameters2
+{
+    font-family:'B Nazanin';
+    font-size:11pt;
+    font-weight:bold; 
+    direction:ltr;
+    text-align: center;
+}
+
+.Providers
+{
+    font-family: 'B Nazanin';
+    font-size: 11pt;
+    font-weight: normal;
+    direction: rtl;
+    text-align: right;
+    float: right;
+}
