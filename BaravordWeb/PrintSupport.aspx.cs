@@ -37,6 +37,8 @@ namespace BaravordWeb
                 }
 
                 Label24.Text = DepTitle(Br_Dt[0]["DEP_ID"]);
+                if (Br_Dt[0]["DEP_ID"].ToString() == "38")
+                    pnlSign.Visible = true;
 
                 Image1.ImageUrl = "../images/" + Br_Ta2.Select_Current_Channel(int.Parse(Br_Dt[0]["CHANNEL_ID"].ToString()))[0]["logourl"].ToString() + ".JPG";
                 Label59.Text = Ch_Dt[0]["Title"].ToString();
@@ -73,7 +75,7 @@ namespace BaravordWeb
                 //dr["ID"] = 1;
                 //dr["ROLE_ID"] = 1;
                 //dr["UNIT"] = 6;
-                //dr["COUNT"] = DBNull.Value;
+                //dr["COUNT"] = 0;
                 //dr["PRICE_UNIT"] = 6;
                 //dr["SHIFT"] = 8;
                 //dr["MONTH"] = 8;
@@ -85,12 +87,13 @@ namespace BaravordWeb
                 GridView3.DataSource = Role_Dt;
                 GridView3.DataBind();
 
-
+               
                 SqlDataSource1.SelectParameters.Clear();
                 SqlDataSource1.SelectParameters.Add("ChannelId", Br_Dt[0]["CHANNEL_ID"].ToString());
                 SqlDataSource1.SelectParameters.Add("Page", "Support");
                 SqlDataSource1.DataBind();
-
+               
+                
 
             }
 
